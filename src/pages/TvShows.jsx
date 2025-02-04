@@ -40,13 +40,18 @@ function TvShows(props) {
           {
             moviesList.map((movie,index)=>{
               
-              const {name,poster_path, id} = movie
+              const {name,poster_path, id,overview,popularity,first_air_date,vote_average} = movie
               
               return <MovieCard 
                         key={index}
                         name={name}
                         poster_path={poster_path}
                         id={id}
+                        // original_name={original_name}
+                        overview={overview}
+                        popularity={popularity}
+                        first_air_date={first_air_date}
+                        vote_average={vote_average}
                      />
                   })
            }

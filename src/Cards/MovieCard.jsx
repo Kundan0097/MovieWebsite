@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-function MovieCard({ title, index, poster_path, name, id, overview, popularity, release_date, vote_average }) {
+function MovieCard({ title, index, poster_path, name, id, overview, popularity, release_date, vote_average,first_air_date}) {
 
   // console.log(id);
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ function MovieCard({ title, index, poster_path, name, id, overview, popularity, 
      
           <Link
             to={`/details/${id}`}
-            state={{ title, index, poster_path, name, id, overview, popularity, release_date, vote_average }}
+            state={{ title, index, poster_path, name, id, overview, popularity, release_date, vote_average,first_air_date }}
             className='detail-btn-new'
           >
             Details

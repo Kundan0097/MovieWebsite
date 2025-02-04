@@ -14,10 +14,10 @@ function Details({ title }) {
             </div>
             <div className="col lg-6 col-md-6 col-sm-6 col-12 details-part2">
             <h1 className='pb-4'>Movies Details</h1>
-            <h4>Title : {movie.title}</h4>
+            <h4>Title : {movie.title?movie.title:movie.name}</h4>
             <p><span style={{fontSize:"18px",fontWeight:"600"}}>Overview : </span>  {movie.overview}</p>
             <p><span style={{fontSize:"18px",fontWeight:"600"}}>Popularity : </span>  {movie.popularity}</p>
-            <p><span style={{fontSize:"18px",fontWeight:"600"}}>Release-date : </span>  {movie.release_date}</p>
+            <p><span style={{fontSize:"18px",fontWeight:"600"}}>Release-date : </span>  {movie.release_date?movie.release_date:movie.first_air_date}</p>
             <p><span style={{fontSize:"18px",fontWeight:"600"}}>Vote-average : </span>  {movie.vote_average}</p>
             </div>
      

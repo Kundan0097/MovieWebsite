@@ -226,7 +226,7 @@ body {
 
 @media (max-width:575px) {
   .movie-card-section {
-    min-height: 435px;
+    min-height: 450px;
 
   }
 }
